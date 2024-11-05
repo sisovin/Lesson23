@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Not Found</title>
+  <link href="{{ url_for('static', filename='css/tailwind.css') }}" rel="stylesheet">
+  <!-- <link href="{{ url_for('static', filename='src/styles/tailwind.css') }}" rel="stylesheet" /> -->
+</head>
+
+<body>
+  <h1 class=" text-orange-500 text-7xl">City Not Found</h1>
+  <h2>Try Again?</h2>
+  <form action="/weather">
+    <input class=" bg-gray-700 text-black" type="text" name="city" id="city" placeholder="Enter a City" />
+    <button class=" bg-red-500" type="submit">Submit</button>
+  </form>
+</body>
+
+</html>
